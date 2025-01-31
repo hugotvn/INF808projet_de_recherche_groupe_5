@@ -1,0 +1,3 @@
+[console_scripts]
+ikestrel = kestrel.cli:ikestrel
+kestrel = kestrel.cli:kestrel

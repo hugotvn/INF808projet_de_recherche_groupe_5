@@ -1,0 +1,2 @@
+kestrel_ipython
+kestrel_jupyter_kernel

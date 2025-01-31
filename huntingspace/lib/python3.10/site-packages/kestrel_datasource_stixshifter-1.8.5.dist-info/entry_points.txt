@@ -1,0 +1,2 @@
+[console_scripts]
+stix-shifter-diag = kestrel_datasource_stixshifter.cli:stix_shifter_diag

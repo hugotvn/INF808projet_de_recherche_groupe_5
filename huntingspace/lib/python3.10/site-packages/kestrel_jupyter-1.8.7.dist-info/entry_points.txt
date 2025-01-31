@@ -1,0 +1,2 @@
+[console_scripts]
+kestrel_jupyter_setup = kestrel_jupyter_kernel.setup:run

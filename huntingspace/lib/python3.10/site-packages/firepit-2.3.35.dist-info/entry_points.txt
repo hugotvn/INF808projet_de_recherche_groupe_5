@@ -1,0 +1,4 @@
+[console_scripts]
+firepit = firepit.cli:app
+splint = firepit.splint:app
+
