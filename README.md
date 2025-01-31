@@ -6,10 +6,22 @@
 
 ##
 #### Utilisation de Kestrel
-L'usage de kestrel se fait dans l'environnemnet virtuel huntingspace à la racine du projet. 
-Après avoir cloné le dépot et avant de commencer l'utilisation il faut entrer la commande : 
+L'usage de kestrel se fait dans l'environnemnet virtuel huntingspace que l'on va créer à la racine du projet. Dans un premier temps créer l'environnement virtuel : 
+``` 
+python3 -m venv huntingspace .
+huntingspace/bin/activate
+```
+  
+Ensuite installer les dépendances nécessaires :
+```
+pip install --upgrade pip setuptools wheel
+pip install kestrel-jupyter
+```
 
-```. huntingspace/bin/activate```
+Et mettre en place l'environnement 
+```
+kestrel_jupyter_setup
+```
 
 Quand l'utilisation est finie utiliser le commande : 
 
