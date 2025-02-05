@@ -26,3 +26,15 @@ kestrel_jupyter_setup
 Quand l'utilisation est finie utiliser le commande : 
 
 ```deactivate```
+
+
+##
+### Utilisation de Kestrel 
+Il y a deux options pour utiliser Kestrel :
+
+- Soit en ligne de commande en faisant :
+```kestrel nom_du_fichier```
+
+- Soit en utilisant Jupyter en utilisant la commande :
+``` jupyter nbclassic```
+Et en cliquant sur ```nouveau``` puis ``` kestrel```.
