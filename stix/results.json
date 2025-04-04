@@ -1,0 +1,118 @@
+{
+    "success": true,
+    "data": [
+        {
+            "event.thread": "main",
+            "event.message": "Server version:        Apache Tomcat/8.0.36",
+            "@timestamp": "2025-03-30T17:42:45.752Z",
+            "event": {
+                "original": "30-Mar-2025 17:42:45.752 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.36"
+            },
+            "event.loglevel": "INFO",
+            "event.class": "org.apache.catalina.startup.VersionLoggerListener",
+            "event.method": "log"
+        },
+        {
+            "event.thread": "main",
+            "event.message": "Server number:         8.0.36.0",
+            "@timestamp": "2025-03-30T17:42:45.811Z",
+            "event": {
+                "original": "30-Mar-2025 17:42:45.811 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.36.0"
+            },
+            "event.loglevel": "INFO",
+            "event.class": "org.apache.catalina.startup.VersionLoggerListener",
+            "event.method": "log"
+        },
+        {
+            "event.thread": "main",
+            "event.message": "CATALINA_HOME:         /usr/local/tomcat",
+            "@timestamp": "2025-03-30T17:42:45.811Z",
+            "event": {
+                "original": "30-Mar-2025 17:42:45.811 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/tomcat"
+            },
+            "event.loglevel": "INFO",
+            "event.class": "org.apache.catalina.startup.VersionLoggerListener",
+            "event.method": "log"
+        },
+        {
+            "event.thread": "main",
+            "event.message": "OS Version:            6.1.0-23-amd64",
+            "@timestamp": "2025-03-30T17:42:45.811Z",
+            "event": {
+                "original": "30-Mar-2025 17:42:45.811 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.1.0-23-amd64"
+            },
+            "event.loglevel": "INFO",
+            "event.class": "org.apache.catalina.startup.VersionLoggerListener",
+            "event.method": "log"
+        },
+        {
+            "event.thread": "main",
+            "event.message": "Server built:          Jun 9 2016 13:55:50 UTC",
+            "@timestamp": "2025-03-30T17:42:45.811Z",
+            "event": {
+                "original": "30-Mar-2025 17:42:45.811 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 9 2016 13:55:50 UTC"
+            },
+            "event.loglevel": "INFO",
+            "event.class": "org.apache.catalina.startup.VersionLoggerListener",
+            "event.method": "log"
+        },
+        {
+            "event.thread": "main",
+            "event.message": "JVM Version:           1.8.0_102-8u102-b14.1-1~bpo8+1-b14",
+            "@timestamp": "2025-03-30T17:42:45.811Z",
+            "event": {
+                "original": "30-Mar-2025 17:42:45.811 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_102-8u102-b14.1-1~bpo8+1-b14"
+            },
+            "event.loglevel": "INFO",
+            "event.class": "org.apache.catalina.startup.VersionLoggerListener",
+            "event.method": "log"
+        },
+        {
+            "event.thread": "main",
+            "event.message": "CATALINA_BASE:         /usr/local/tomcat",
+            "@timestamp": "2025-03-30T17:42:45.811Z",
+            "event": {
+                "original": "30-Mar-2025 17:42:45.811 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/tomcat"
+            },
+            "event.loglevel": "INFO",
+            "event.class": "org.apache.catalina.startup.VersionLoggerListener",
+            "event.method": "log"
+        },
+        {
+            "event.thread": "main",
+            "event.message": "JVM Vendor:            Oracle Corporation",
+            "@timestamp": "2025-03-30T17:42:45.811Z",
+            "event": {
+                "original": "30-Mar-2025 17:42:45.811 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation"
+            },
+            "event.loglevel": "INFO",
+            "event.class": "org.apache.catalina.startup.VersionLoggerListener",
+            "event.method": "log"
+        },
+        {
+            "event.thread": "main",
+            "event.message": "Architecture:          amd64",
+            "@timestamp": "2025-03-30T17:42:45.811Z",
+            "event": {
+                "original": "30-Mar-2025 17:42:45.811 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64"
+            },
+            "event.loglevel": "INFO",
+            "event.class": "org.apache.catalina.startup.VersionLoggerListener",
+            "event.method": "log"
+        },
+        {
+            "event.thread": "main",
+            "event.message": "Java Home:             /usr/lib/jvm/java-8-openjdk-amd64/jre",
+            "@timestamp": "2025-03-30T17:42:45.811Z",
+            "event": {
+                "original": "30-Mar-2025 17:42:45.811 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-openjdk-amd64/jre"
+            },
+            "event.loglevel": "INFO",
+            "event.class": "org.apache.catalina.startup.VersionLoggerListener",
+            "event.method": "log"
+        }
+    ],
+    "metadata": [
+        1743356565811
+    ]
+}
