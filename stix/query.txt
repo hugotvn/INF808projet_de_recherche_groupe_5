@@ -1,0 +1,1 @@
+((event.loglevel.keyword : "FINE") OR (event.loglevel : "WARNING") OR (event.loglevel.keyword : "INFO")) AND (@timestamp:["2022-04-06T00:00:00.000Z" TO "2026-04-06T00:05:00.000Z"])

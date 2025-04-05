@@ -1,0 +1,8 @@
+toSave = GET indicator FROM stixshifter://test_stix.stix.json WHERE pattern_type != ""
+SAVE toSave TO tmp/test_stix.parquet.gz
+
+# in another hunt, load the processes
+data = LOAD /tmp/test_stix.parquet.gz
+
+indicators = GET indicator FROM data WHERE pattern_type != ""
+INFO indicators
