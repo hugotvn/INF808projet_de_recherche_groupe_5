@@ -1,0 +1,1423 @@
+{
+    "type": "bundle",
+    "id": "bundle--d1b640bc-4af1-4de9-b784-377b25ab0b6c",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "identity",
+            "id": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "name": "Wireshark STIX converter",
+            "identity_class": "program"
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--49e33992-8ce4-4ff9-bb74-ee6168aab1c2",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 48874,
+                    "dst_port": 8080
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--b5c9af6e-bf47-49fc-92d4-a7b945b1d6e8",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 8080,
+                    "dst_port": 48874
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--b079925a-0f5f-4460-ba60-7812cc06b386",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.79.136"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "66.130.62.8"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 37738,
+                    "dst_port": 80
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--0f701a37-8370-4138-a96e-9906146cc3e2",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "66.130.62.8"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.79.136"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 80,
+                    "dst_port": 37738
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--41fa2c22-a986-40d7-8473-bdb5c1c3d47c",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.79.136"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "66.130.62.35"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 39500,
+                    "dst_port": 80
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--0e7cad7b-c5de-487c-a1d6-399dfe8995c7",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "66.130.62.35"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.79.136"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 80,
+                    "dst_port": 39500
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--952a87a4-cb1c-4539-a3ee-964d580bc229",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 54682,
+                    "dst_port": 1389
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--56fcaef3-09d5-4555-92a3-58c81893b8e7",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 1389,
+                    "dst_port": 54682
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--a1bb8364-eb1a-4c11-93af-c6d589fa7503",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 54682,
+                    "dst_port": 1389
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--e022ca2e-0703-4707-91f7-94cc64cd10c1",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 54682,
+                    "dst_port": 1389
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--cc1700fa-4d6d-4ac8-b27c-8499c2e30f36",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 1389,
+                    "dst_port": 54682
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--4f2c7eca-01e1-48bc-8555-e31133fdc651",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 1389,
+                    "dst_port": 54682
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--4abf1370-0b95-462a-b04a-de8c25935234",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 54682,
+                    "dst_port": 1389
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--82296fa3-b201-4d7d-815c-88cf67884656",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 54682,
+                    "dst_port": 1389
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--2480c554-9efd-4ac7-9330-bf5d26319760",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 1389,
+                    "dst_port": 54682
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--a8a55da8-ec91-48a3-a10f-0968dce001bb",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 1389,
+                    "dst_port": 54682
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--58746329-49a2-4a33-88b4-6fc28d6a6a48",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 54682,
+                    "dst_port": 1389
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--094357a4-b4d6-4ebb-8d64-e359ae2c088f",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 1389,
+                    "dst_port": 54682
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--add349aa-c202-4266-9cf0-0ad797987f52",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 54682,
+                    "dst_port": 1389
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--76902297-1ca8-464f-b3c4-2d47a94ca531",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 37998,
+                    "dst_port": 8000
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--9a73d870-63cb-48e1-8c2f-7552b3d31ce8",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 8000,
+                    "dst_port": 37998
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--ea14e511-787a-4f8d-9a98-a4acf58fa479",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 37998,
+                    "dst_port": 8000
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--428fdfa9-77d5-4501-bb6f-726d688ee92a",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 37998,
+                    "dst_port": 8000
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--7abd96cb-e107-4244-a984-439f6d094536",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 8000,
+                    "dst_port": 37998
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--fcc284b7-625d-454b-9109-078794e445bc",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 8000,
+                    "dst_port": 37998
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--9caaa07b-6674-44f5-a46d-b5f0d25b5c22",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 37998,
+                    "dst_port": 8000
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--ce5a674c-3cbe-43c7-9078-bb66ce1cbec4",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 8000,
+                    "dst_port": 37998
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--8346cdff-a9ca-460a-baa2-31516e632409",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 37998,
+                    "dst_port": 8000
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--072d7b24-db2e-48ac-85ae-953042f2747c",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 8000,
+                    "dst_port": 37998
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--5d722418-7e1c-4bae-9d32-f646d83ce260",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 37998,
+                    "dst_port": 8000
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--4d20e4b4-0d07-4de2-9e65-009647c292de",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 8000,
+                    "dst_port": 37998
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--a73342a1-9564-488e-b9ed-ae992e7f4321",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 41354,
+                    "dst_port": 9001
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--a2b00ead-abe8-43c4-9e4c-255cd383554f",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 9001,
+                    "dst_port": 41354
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--066dcc17-373d-4b1c-8768-e384d2e997f5",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 41354,
+                    "dst_port": 9001
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--2dc304c7-aba4-4568-b605-81bea84b6137",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.79.136"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "34.107.221.82"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 47212,
+                    "dst_port": 80
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--293e4549-b1c5-4e5c-83b4-24d6bcc02966",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "34.107.221.82"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.79.136"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 80,
+                    "dst_port": 47212
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--1e4cfa32-2381-49a9-9f10-7b28a00bfe50",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.79.136"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "34.107.221.82"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 47228,
+                    "dst_port": 80
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--112d8532-479a-4cb1-bc3e-71ebc95350b4",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "34.107.221.82"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.79.136"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 80,
+                    "dst_port": 47228
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--fafb53e9-f369-4512-afd0-fc488702ceb0",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 9001,
+                    "dst_port": 41354
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--91176e02-bf95-46e2-8eba-d0ebae3e274e",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 41354,
+                    "dst_port": 9001
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--0d92d76a-f8ca-4a05-9222-2c602dea512a",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 41354,
+                    "dst_port": 9001
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--b22b50ef-b646-4323-a949-f7298ec6cba6",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 9001,
+                    "dst_port": 41354
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--08bc0bc6-64fe-4099-ad4c-2e17c176a926",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 41354,
+                    "dst_port": 9001
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--ed4d3b17-e38c-426b-9794-b21f98472fb1",
+            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
+            "created": "2025-04-04T22:20:08.200850Z",
+            "modified": "2025-04-04T22:20:08.200850Z",
+            "first_observed": "2025-04-04T22:20:08.200850Z",
+            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "is_active": false,
+                    "protocols": [
+                        "ip",
+                        "tcp"
+                    ],
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 9001,
+                    "dst_port": 41354
+                }
+            }
+        }
+    ]
+}

