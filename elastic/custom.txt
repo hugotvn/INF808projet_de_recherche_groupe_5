@@ -1,0 +1,5 @@
+JAVACLASS (?:[a-zA-Z$_][a-zA-Z$_0-9]*\.)*[a-zA-Z$_][a-zA-Z$_0-9]*
+JAVAFILE (?:[a-zA-Z$_0-9. -]+)
+JAVAMETHOD (?:(<(?:cl)?init>)|[a-zA-Z$_][a-zA-Z$_0-9]*)
+CATALINA8_DATESTAMP %{MONTHDAY}-%{MONTH}-%{YEAR} %{HOUR}:%{MINUTE}:%{SECOND}
+CATALINA8_LOG %{CATALINA8_DATESTAMP:timestamp} %{WORD:event.loglevel} \[%{DATA:event.thread}\] %{JAVACLASS:event.class}\.(?:%{JAVAMETHOD:event.method})? %{JAVALOGMESSAGE:event.message}
