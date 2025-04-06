@@ -30,45 +30,25 @@ def convert_wireshark_to_stix(input_file, output_file):
             protocols.append("udp")
         if "icmp" in layers:
             protocols.append("icmp")
-
-        object_refs = {}
-        if ip_src:
-            object_refs["0"] = {
-                "type": "ipv4-addr",
-                "value": ip_src
-            }
-        if ip_dst:
-            object_refs["1"] = {
-                "type": "ipv4-addr",
-                "value": ip_dst
-            }
-
-        net_traffic = {
-            "type": "network-traffic",
-            "is_active": False,
-            "protocols": protocols,
-        }
-        if ip_src:
-            net_traffic["src_ref"] = "0"
-        if ip_dst:
-            net_traffic["dst_ref"] = "1"
-        if src_port:
-            net_traffic["src_port"] = src_port
-        if dst_port:
-            net_traffic["dst_port"] = dst_port
-
-        object_refs["2"] = net_traffic
-
+        if "urlencoded-form" in layers:
+            for i in layers["urlencoded-form"]:
+                if "ldap" in i :
+                    protocols.append("ldap")
+                    
         observed_data.append({
-            "type": "observed-data",
-            "id": generate_id("observed-data"),
+            "type": "network-traffic",
+            "id": generate_id("network-traffic"),
             "created_by_ref": identity_id,
             "created": now,
             "modified": now,
             "first_observed": now,
             "last_observed": now,
             "number_observed": 1,
-            "objects": object_refs
+            "protocols": protocols,
+            "ip_dst": ip_dst,
+            "ip_src": ip_src,
+            "port_src": src_port,
+            "port_dst": dst_port
         })
 
     bundle = {

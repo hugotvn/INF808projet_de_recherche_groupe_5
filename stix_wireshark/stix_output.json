@@ -1,1423 +1,808 @@
 {
     "type": "bundle",
-    "id": "bundle--d1b640bc-4af1-4de9-b784-377b25ab0b6c",
+    "id": "bundle--38f4dea3-4783-4cb2-a94f-df887aa1020e",
     "spec_version": "2.0",
     "objects": [
         {
             "type": "identity",
-            "id": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
+            "id": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
             "name": "Wireshark STIX converter",
             "identity_class": "program"
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--49e33992-8ce4-4ff9-bb74-ee6168aab1c2",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--ef147f27-7697-4d3f-ad5d-a8b83dba4dc8",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 48874,
-                    "dst_port": 8080
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp",
+                "ldap"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 48874,
+            "port_dst": 8080
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--b5c9af6e-bf47-49fc-92d4-a7b945b1d6e8",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--30810c89-6b7f-47b7-8c3d-73334600803b",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 8080,
-                    "dst_port": 48874
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 8080,
+            "port_dst": 48874
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--b079925a-0f5f-4460-ba60-7812cc06b386",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--96af6fe4-5325-4863-8a2d-af544025e9b1",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "192.168.79.136"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "66.130.62.8"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 37738,
-                    "dst_port": 80
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "66.130.62.8",
+            "ip_src": "192.168.79.136",
+            "port_src": 37738,
+            "port_dst": 80
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--0f701a37-8370-4138-a96e-9906146cc3e2",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--6a4cfc6f-7343-42a9-9e6a-5e04602c7833",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "66.130.62.8"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "192.168.79.136"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 80,
-                    "dst_port": 37738
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "192.168.79.136",
+            "ip_src": "66.130.62.8",
+            "port_src": 80,
+            "port_dst": 37738
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--41fa2c22-a986-40d7-8473-bdb5c1c3d47c",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--f2936d78-e8ad-4c51-bfe5-8edce9e8a7dc",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "192.168.79.136"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "66.130.62.35"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 39500,
-                    "dst_port": 80
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "66.130.62.35",
+            "ip_src": "192.168.79.136",
+            "port_src": 39500,
+            "port_dst": 80
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--0e7cad7b-c5de-487c-a1d6-399dfe8995c7",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--8d1fd8e2-e903-43e5-a04d-47d528c51fc7",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "66.130.62.35"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "192.168.79.136"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 80,
-                    "dst_port": 39500
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "192.168.79.136",
+            "ip_src": "66.130.62.35",
+            "port_src": 80,
+            "port_dst": 39500
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--952a87a4-cb1c-4539-a3ee-964d580bc229",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--224bdc29-b35f-4fe0-b392-a725a9e51125",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 54682,
-                    "dst_port": 1389
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 54682,
+            "port_dst": 1389
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--56fcaef3-09d5-4555-92a3-58c81893b8e7",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--c44efa1f-ab1d-4304-b0b1-5c1011ac8af0",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 1389,
-                    "dst_port": 54682
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 1389,
+            "port_dst": 54682
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--a1bb8364-eb1a-4c11-93af-c6d589fa7503",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--1f06619f-b72f-496f-ba4f-dcdec6864a90",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 54682,
-                    "dst_port": 1389
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 54682,
+            "port_dst": 1389
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--e022ca2e-0703-4707-91f7-94cc64cd10c1",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--5bcd9192-aad1-4919-bbdc-46bbaaa862e4",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 54682,
-                    "dst_port": 1389
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 54682,
+            "port_dst": 1389
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--cc1700fa-4d6d-4ac8-b27c-8499c2e30f36",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--485de7c7-e90b-4073-be5b-8976294f98ae",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 1389,
-                    "dst_port": 54682
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 1389,
+            "port_dst": 54682
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--4f2c7eca-01e1-48bc-8555-e31133fdc651",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--52ac0137-8422-40bf-8024-3429f0c714ab",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 1389,
-                    "dst_port": 54682
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 1389,
+            "port_dst": 54682
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--4abf1370-0b95-462a-b04a-de8c25935234",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--f4c597e5-6b52-4cd1-b910-5ea6209eef73",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 54682,
-                    "dst_port": 1389
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 54682,
+            "port_dst": 1389
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--82296fa3-b201-4d7d-815c-88cf67884656",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--d89f690a-c58b-41a3-b6dd-3aab93cc080d",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 54682,
-                    "dst_port": 1389
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 54682,
+            "port_dst": 1389
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--2480c554-9efd-4ac7-9330-bf5d26319760",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--6911e1a7-f482-4050-90b8-c70de817eb3a",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 1389,
-                    "dst_port": 54682
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 1389,
+            "port_dst": 54682
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--a8a55da8-ec91-48a3-a10f-0968dce001bb",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--0ac63f7f-172f-40c8-ad72-fa89c32106cc",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 1389,
-                    "dst_port": 54682
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 1389,
+            "port_dst": 54682
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--58746329-49a2-4a33-88b4-6fc28d6a6a48",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--8b82342a-7fb0-48ae-a6c7-e7f09e596e0c",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 54682,
-                    "dst_port": 1389
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 54682,
+            "port_dst": 1389
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--094357a4-b4d6-4ebb-8d64-e359ae2c088f",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--b6027621-4014-46d9-9fba-acb9ede87096",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 1389,
-                    "dst_port": 54682
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 1389,
+            "port_dst": 54682
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--add349aa-c202-4266-9cf0-0ad797987f52",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--bae5ef40-f651-4636-86e4-462625d386df",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 54682,
-                    "dst_port": 1389
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 54682,
+            "port_dst": 1389
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--76902297-1ca8-464f-b3c4-2d47a94ca531",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--b57c7f30-8ef1-4641-a8f1-31fe9358eb6f",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 37998,
-                    "dst_port": 8000
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 37998,
+            "port_dst": 8000
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--9a73d870-63cb-48e1-8c2f-7552b3d31ce8",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--d81e76cf-2994-4a8a-a187-30abeb85d9f8",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 8000,
-                    "dst_port": 37998
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 8000,
+            "port_dst": 37998
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--ea14e511-787a-4f8d-9a98-a4acf58fa479",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--3d1d5ee3-0245-4437-9fa5-abd51f98efff",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 37998,
-                    "dst_port": 8000
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 37998,
+            "port_dst": 8000
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--428fdfa9-77d5-4501-bb6f-726d688ee92a",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--e7d20402-9a0e-44c4-8b88-019b9b3615cd",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 37998,
-                    "dst_port": 8000
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 37998,
+            "port_dst": 8000
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--7abd96cb-e107-4244-a984-439f6d094536",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--e46d6444-478c-45d9-8f1b-2fe51f92c3cc",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 8000,
-                    "dst_port": 37998
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 8000,
+            "port_dst": 37998
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--fcc284b7-625d-454b-9109-078794e445bc",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--96efebe9-aa82-429b-8e0d-398b8a6e4b8d",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 8000,
-                    "dst_port": 37998
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 8000,
+            "port_dst": 37998
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--9caaa07b-6674-44f5-a46d-b5f0d25b5c22",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--e4adc15a-791a-4f9a-904e-11a76f887ee8",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 37998,
-                    "dst_port": 8000
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 37998,
+            "port_dst": 8000
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--ce5a674c-3cbe-43c7-9078-bb66ce1cbec4",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--3a982d86-2caf-4d2e-ae7a-41754e76ba0e",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 8000,
-                    "dst_port": 37998
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 8000,
+            "port_dst": 37998
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--8346cdff-a9ca-460a-baa2-31516e632409",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--b48efc85-f4fe-49f3-bf46-40b05b8e9303",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 37998,
-                    "dst_port": 8000
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 37998,
+            "port_dst": 8000
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--072d7b24-db2e-48ac-85ae-953042f2747c",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--c1b9ca8b-6a43-4d2a-8eca-2d76fa2fe605",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 8000,
-                    "dst_port": 37998
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 8000,
+            "port_dst": 37998
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--5d722418-7e1c-4bae-9d32-f646d83ce260",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--048c4567-b0d9-4833-9858-51ace45e43f6",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 37998,
-                    "dst_port": 8000
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 37998,
+            "port_dst": 8000
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--4d20e4b4-0d07-4de2-9e65-009647c292de",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--cfdd67c8-f312-430e-8d8b-7dc4759118c3",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 8000,
-                    "dst_port": 37998
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 8000,
+            "port_dst": 37998
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--a73342a1-9564-488e-b9ed-ae992e7f4321",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--342a63cf-f428-41de-a13b-42638e9ce8b1",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 41354,
-                    "dst_port": 9001
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 41354,
+            "port_dst": 9001
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--a2b00ead-abe8-43c4-9e4c-255cd383554f",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--bd151c88-cb90-46f9-a060-686501452214",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 9001,
-                    "dst_port": 41354
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 9001,
+            "port_dst": 41354
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--066dcc17-373d-4b1c-8768-e384d2e997f5",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--b21f97b8-355d-4b6d-8bb2-307f0ab12b23",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 41354,
-                    "dst_port": 9001
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 41354,
+            "port_dst": 9001
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--2dc304c7-aba4-4568-b605-81bea84b6137",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--831d3496-c9a8-4712-aad3-39427504b66c",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "192.168.79.136"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "34.107.221.82"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 47212,
-                    "dst_port": 80
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "34.107.221.82",
+            "ip_src": "192.168.79.136",
+            "port_src": 47212,
+            "port_dst": 80
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--293e4549-b1c5-4e5c-83b4-24d6bcc02966",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--5bf94b84-baed-469e-b819-88c9b971ba2d",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "34.107.221.82"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "192.168.79.136"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 80,
-                    "dst_port": 47212
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "192.168.79.136",
+            "ip_src": "34.107.221.82",
+            "port_src": 80,
+            "port_dst": 47212
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--1e4cfa32-2381-49a9-9f10-7b28a00bfe50",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--8b618b52-c45a-4ef9-badc-3d7f5d02c75c",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "192.168.79.136"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "34.107.221.82"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 47228,
-                    "dst_port": 80
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "34.107.221.82",
+            "ip_src": "192.168.79.136",
+            "port_src": 47228,
+            "port_dst": 80
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--112d8532-479a-4cb1-bc3e-71ebc95350b4",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--8ca698e6-71bf-4fd1-953a-17390fac3acd",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "34.107.221.82"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "192.168.79.136"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 80,
-                    "dst_port": 47228
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "192.168.79.136",
+            "ip_src": "34.107.221.82",
+            "port_src": 80,
+            "port_dst": 47228
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--fafb53e9-f369-4512-afd0-fc488702ceb0",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--f7b6c9c0-1523-4929-9382-850a92c931f2",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 9001,
-                    "dst_port": 41354
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 9001,
+            "port_dst": 41354
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--91176e02-bf95-46e2-8eba-d0ebae3e274e",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--58e85894-c62c-431a-b3be-822fec0ce5ae",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 41354,
-                    "dst_port": 9001
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 41354,
+            "port_dst": 9001
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--0d92d76a-f8ca-4a05-9222-2c602dea512a",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--f2a591c6-c04a-4b7b-81f7-a3db9e924459",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 41354,
-                    "dst_port": 9001
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 41354,
+            "port_dst": 9001
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--b22b50ef-b646-4323-a949-f7298ec6cba6",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--3c047aa6-2644-4458-bb28-ff36c7c70575",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 9001,
-                    "dst_port": 41354
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 9001,
+            "port_dst": 41354
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--08bc0bc6-64fe-4099-ad4c-2e17c176a926",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--73aab2a2-1bf1-421b-ad4c-86626cb3b960",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 41354,
-                    "dst_port": 9001
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 41354,
+            "port_dst": 9001
         },
         {
-            "type": "observed-data",
-            "id": "observed-data--ed4d3b17-e38c-426b-9794-b21f98472fb1",
-            "created_by_ref": "identity--9d80790d-e4de-44a3-ac98-5d1a481e4b75",
-            "created": "2025-04-04T22:20:08.200850Z",
-            "modified": "2025-04-04T22:20:08.200850Z",
-            "first_observed": "2025-04-04T22:20:08.200850Z",
-            "last_observed": "2025-04-04T22:20:08.200850Z",
+            "type": "network-traffic",
+            "id": "network-traffic--dc6e40c8-3138-42cf-968d-0d2fbef1bea3",
+            "created_by_ref": "identity--91268639-820a-4a61-b58e-01753a896cfa",
+            "created": "2025-04-06T20:18:22.713169Z",
+            "modified": "2025-04-06T20:18:22.713169Z",
+            "first_observed": "2025-04-06T20:18:22.713169Z",
+            "last_observed": "2025-04-06T20:18:22.713169Z",
             "number_observed": 1,
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "1": {
-                    "type": "ipv4-addr",
-                    "value": "127.0.0.1"
-                },
-                "2": {
-                    "type": "network-traffic",
-                    "is_active": false,
-                    "protocols": [
-                        "ip",
-                        "tcp"
-                    ],
-                    "src_ref": "0",
-                    "dst_ref": "1",
-                    "src_port": 9001,
-                    "dst_port": 41354
-                }
-            }
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "ip_dst": "127.0.0.1",
+            "ip_src": "127.0.0.1",
+            "port_src": 9001,
+            "port_dst": 41354
         }
     ]
 }
