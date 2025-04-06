@@ -5,7 +5,7 @@
 
 
 ##
-#### Utilisation de Kestrel
+#### Mise en place de Kestrel
 L'usage de kestrel se fait dans l'environnemnet virtuel huntingspace que l'on va créer à la racine du projet. Dans un premier temps créer l'environnement virtuel : 
 ``` 
 python3 -m venv huntingspace .
@@ -23,7 +23,7 @@ Et mettre en place l'environnement
 kestrel_jupyter_setup
 ```
 
-Quand l'utilisation est finie utiliser le commande : 
+Quand l'utilisation est finie utiliser la commande : 
 
 ```deactivate```
 
