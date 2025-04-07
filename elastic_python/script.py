@@ -97,6 +97,7 @@ while True:
         message = hit["_source"]["event.message"]
         all_data.append({"type": "process", 
                          "id": generate_id("process"),
+                         "name": "process",
                          "timestamp": timestamp, 
                          "loglevel": loglevel, 
                          "thread": thread, 
