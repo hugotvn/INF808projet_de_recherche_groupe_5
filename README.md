@@ -41,19 +41,26 @@ Et en cliquant sur ```nouveau``` puis ``` kestrel```.
 
 
 ### Installation ELK (Elasticsearch - Logstash - Kibana)
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 
 Pour lancer les containers :
-```cd elastic
+```
+cd elastic
 docker-compose -d up
 cd ..
 ```
 
 Créer le dossier qui recevra les patterns des logs Catalina
-```docker exec -it elastic-logstash-1 mkdir /usr/share/logstash/patterns```
+```
+docker exec -it elastic-logstash-1 mkdir /usr/share/logstash/patterns
+```
 
 Mettre les patterns de logstash dans les pattern
-```docker cp custom.txt /usr/share/logstash/patterns/custom.txt```
+```
+docker cp custom.txt /usr/share/logstash/patterns/custom.txt
+```
 
 Aller sur [localhost:5601](http://localhost:5601/) qui est le port de Kibana
 S'identifier avec les codes suivant :
@@ -62,6 +69,7 @@ S'identifier avec les codes suivant :
 
 Aller dans Stack Management > Index Management > Console
 Copier coller le script ```elastic/mapping_elastic.txt```
+
 Lancer la commande
 
 Voilà, installation terminée !
