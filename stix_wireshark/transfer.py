@@ -1,6 +1,12 @@
 import json
 import uuid
 from datetime import datetime
+from dateutil import parser
+
+def change_timestamp(tmstp):
+    dt = parser.parse(tmstp)
+    iso_format = dt.strftime('%Y-%m-%dT%H:%M:%S.%f')[:-3] + 'Z'
+    return iso_format
 
 def generate_id(object_type):
     return f"{object_type}--{str(uuid.uuid4())}"
@@ -18,6 +24,7 @@ def convert_wireshark_to_stix(input_file, output_file):
     
         ip_src = layers.get("ip", {}).get("ip.src", "")
         ip_dst = layers.get("ip", {}).get("ip.dst", "")
+        timestamp = layers.get("frame", {}).get("frame.time_utc","")
         src_port = int(layers.get("tcp", {}).get("tcp.srcport", ""))
         dst_port = int(layers.get("tcp", {}).get("tcp.dstport", ""))
         protocols = []
@@ -39,10 +46,7 @@ def convert_wireshark_to_stix(input_file, output_file):
             "type": "network-traffic",
             "id": generate_id("network-traffic"),
             "created_by_ref": identity_id,
-            "created": now,
-            "modified": now,
-            "first_observed": now,
-            "last_observed": now,
+            "timestamp": change_timestamp(timestamp),
             "number_observed": 1,
             "protocols": protocols,
             "dst_ip": ip_dst,
