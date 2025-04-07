@@ -28,7 +28,7 @@ def convert_wireshark_to_stix(input_file, output_file):
         src_port = int(layers.get("tcp", {}).get("tcp.srcport", ""))
         dst_port = int(layers.get("tcp", {}).get("tcp.dstport", ""))
         protocols = []
-
+        toAdd={}
         if "ip" in layers:
             protocols.append("ip")
         if "tcp" in layers:
@@ -41,8 +41,13 @@ def convert_wireshark_to_stix(input_file, output_file):
             for i in layers["urlencoded-form"]:
                 if "ldap" in i :
                     protocols.append("ldap")
-                    
-        observed_data.append({
+        if "http" in layers :
+            protocols.append("http")
+            if "http.connection" in layers["http"] :
+                toAdd["http.connection"] = layers["http"]["http.connection"]
+            if "http.request.full_uri" in layers["http"] :
+                toAdd["http.request.full_uri"] = layers["http"]["http.request.full_uri"]
+        jison = {
             "type": "network-traffic",
             "id": generate_id("network-traffic"),
             "created_by_ref": identity_id,
@@ -53,7 +58,11 @@ def convert_wireshark_to_stix(input_file, output_file):
             "src_ip": ip_src,
             "src_port": src_port,
             "dst_port": dst_port
-        })
+        }
+        for i in toAdd :
+            jison[i] = toAdd[i]
+                    
+        observed_data.append(jison)
 
     bundle = {
         "type": "bundle",
