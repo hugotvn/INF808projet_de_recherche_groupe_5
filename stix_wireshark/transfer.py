@@ -46,7 +46,7 @@ def convert_wireshark_to_stix(input_file, output_file):
             "number_observed": 1,
             "protocols": protocols,
             "dst_ip": ip_dst,
-            "src_iip": ip_src,
+            "src_ip": ip_src,
             "src_port": src_port,
             "dst_port": dst_port
         })
