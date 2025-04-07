@@ -45,10 +45,10 @@ def convert_wireshark_to_stix(input_file, output_file):
             "last_observed": now,
             "number_observed": 1,
             "protocols": protocols,
-            "ip_dst": ip_dst,
-            "ip_src": ip_src,
-            "port_src": src_port,
-            "port_dst": dst_port
+            "dst_ip": ip_dst,
+            "src_iip": ip_src,
+            "src_port": src_port,
+            "dst_port": dst_port
         })
 
     bundle = {

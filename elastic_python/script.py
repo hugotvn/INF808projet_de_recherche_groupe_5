@@ -37,7 +37,7 @@ def generate_id(object_type):
 start_time = time.time()
 
 # Step 1: Create a PIT
-pit_url = "https://localhost:9201/logstash-*/_pit?keep_alive=10m"
+pit_url = "https://localhost:9201/logstash_logs/_pit?keep_alive=10m"
 pit_response = requests.post(pit_url, auth=(username, password), verify=False)
 
 # Log the Step 1 request and response
@@ -96,6 +96,7 @@ while True:
         class_ecs = hit["_source"]["event.class"]
         message = hit["_source"]["event.message"]
         all_data.append({"type": "process", 
+                         "id": generate_id("process"),
                          "timestamp": timestamp, 
                          "loglevel": loglevel, 
                          "thread": thread, 
