@@ -45,19 +45,19 @@ Et en cliquant sur ```nouveau``` puis ``` kestrel```.
 pip install -r requirements.txt
 ```
 
-Pour lancer les containers : \
+Pour lancer les containers :  
 ```
 cd elastic
 docker-compose -d up
 cd ..
 ```
 
-Créer le dossier qui recevra les patterns des logs Catalinac \
+Créer le dossier qui recevra les patterns des logs Catalinac  
 ```
 docker exec -it elastic-logstash-1 mkdir /usr/share/logstash/patterns
 ```
 
-Mettre les patterns de logstash dans les pattern \
+Mettre les patterns de logstash dans les pattern  
 ```
 docker cp custom.txt /usr/share/logstash/patterns/custom.txt
 ```
