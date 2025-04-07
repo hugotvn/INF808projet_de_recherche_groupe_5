@@ -1,12 +1,14 @@
 import requests
 import json
 import time
+import uuid
+from datetime import datetime
 import getpass  # Library to hide password input
 
 # Prompt for username and password
 username = input("Enter your username: ")
 password = getpass.getpass("Enter your password: ")
-
+now = datetime.utcnow().isoformat() + "Z"
 # Initialize variables
 pit_id = None
 last_sort = None
@@ -28,6 +30,9 @@ def log_execution_time(start_time):
         end_time = time.time()
         print(f"Script execution time: {end_time - start_time:.2f} seconds")
 
+def generate_id(object_type):
+    return f"{object_type}--{str(uuid.uuid4())}"
+
 # Measure start time
 start_time = time.time()
 
@@ -47,6 +52,7 @@ if pit_response.status_code != 200:
     exit(1)
 
 # Parse PIT response JSON and save pit_id
+log_message(f"JSON pit DATA : {pit_response.text}")
 pit_data = json.loads(pit_response.text)
 pit_id = pit_data.get("id")
 
@@ -72,25 +78,31 @@ if search_response.status_code != 200:
         log_message("Authentication failed. Check your credentials.")
     exit(1)
 
-i= 0
+all_data = []
 while True:
     # Step 4: Parse the search response
     search_data = json.loads(search_response.text)
     hits = search_data.get("hits", {}).get("hits", [])
-    i+=1
     if not hits:
         break
 
-    # Extract and save data to output_file
-    with open(output_file, "a") as file:
-        print(i)
-        for hit in hits:
-            thread = hit["_source"]["thread"]
-            loglevel = hit["_source"]["x-ecs-log.level"]
-            method = hit["_source"]["method"]
-            timestamp = hit["_source"]["@timestamp"]
-            class_ecs = hit["_source"]["class"]
-            file.write(json.dumps({ "@timestamp": timestamp, "loglevel": loglevel, "thread": thread, "method": method, "class": class_ecs}) + "\n")
+    for hit in hits:
+        if "event.thread" not in hit["_source"] :
+            continue
+        thread = hit["_source"]["event.thread"]
+        loglevel = hit["_source"]["event.loglevel"]
+        method = hit["_source"]["event.method"]
+        timestamp = hit["_source"]["@timestamp"]
+        class_ecs = hit["_source"]["event.class"]
+        message = hit["_source"]["event.message"]
+        all_data.append({"type": "process", 
+                         "timestamp": timestamp, 
+                         "loglevel": loglevel, 
+                         "thread": thread, 
+                         "method": method, 
+                         "class": class_ecs,
+                         "process_command": message})
+        
 
     # Step 5: Get last_sort for the next iteration
     last_sort = hits[-1]["sort"]
@@ -116,6 +128,26 @@ while True:
         if search_response.status_code == 401:
             log_message("Authentication failed. Check your credentials.")
         break
+
+bundle = {
+    "type": "bundle",
+    "id": generate_id("bundle"),
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "identity",
+            "id": generate_id("identity"),
+            "created": now,
+            "modified": now,
+            "name": "Elasticsearch To STIX",
+            "identity_class": "program"
+        },
+        *all_data
+    ]
+}
+
+with open(output_file, "a") as file:
+    json.dump(bundle, file, indent=4)
 
 # Log script execution time
 log_execution_time(start_time)
