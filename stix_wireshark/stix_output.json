@@ -1,20 +1,20 @@
 {
     "type": "bundle",
-    "id": "bundle--9e72f084-9fa4-4e10-ac5d-413f8ad04b7e",
+    "id": "bundle--3219f420-b738-4438-9ebe-842f1c3263d1",
     "spec_version": "2.0",
     "objects": [
         {
             "type": "identity",
-            "id": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
-            "created": "2025-04-07T22:40:36.735718Z",
-            "modified": "2025-04-07T22:40:36.735718Z",
+            "id": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
+            "created": "2025-04-07T23:22:51.409058Z",
+            "modified": "2025-04-07T23:22:51.409058Z",
             "name": "Wireshark STIX converter",
             "identity_class": "program"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--257d45d1-b59f-46b1-844b-ca127057a5b1",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--594bcbd6-9b6e-495c-9850-7fa0a1d44d26",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:26.410Z",
             "number_observed": 1,
             "protocols": [
@@ -27,13 +27,17 @@
             "src_ip": "127.0.0.1",
             "src_port": 48874,
             "dst_port": 8080,
+            "tcp.len": "721",
+            "tcp.flags.push": "1",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1",
             "http.connection": "keep-alive",
             "http.request.full_uri": "http://localhost:8080/login"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--1a51500c-8ff6-4cde-ac80-15adbc415992",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--67910afa-633d-4422-b16e-d4c642641b0b",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:26.410Z",
             "number_observed": 1,
             "protocols": [
@@ -43,12 +47,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 8080,
-            "dst_port": 48874
+            "dst_port": 48874,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--2bfee01d-0413-4606-9b79-df1fefd861a8",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--da412f22-1dee-4fee-8b56-14e844e3eabc",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:26.441Z",
             "number_observed": 1,
             "protocols": [
@@ -58,12 +66,16 @@
             "dst_ip": "66.130.62.8",
             "src_ip": "192.168.79.136",
             "src_port": 37738,
-            "dst_port": 80
+            "dst_port": 80,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--7cd068d3-e816-495f-b524-87dc9e27e0bd",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--3ad52754-9d65-42cd-b1ca-85fe36c1e57d",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:26.441Z",
             "number_observed": 1,
             "protocols": [
@@ -73,12 +85,16 @@
             "dst_ip": "192.168.79.136",
             "src_ip": "66.130.62.8",
             "src_port": 80,
-            "dst_port": 37738
+            "dst_port": 37738,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--e821863d-662f-4e85-9918-f64bc1c7c752",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--aa9cc274-d1c9-4b62-bcc0-0dbb7d671010",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:26.855Z",
             "number_observed": 1,
             "protocols": [
@@ -88,12 +104,16 @@
             "dst_ip": "66.130.62.35",
             "src_ip": "192.168.79.136",
             "src_port": 39500,
-            "dst_port": 80
+            "dst_port": 80,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--e5c9ad1e-3a45-4761-867f-153e1f14a603",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--4aaf4f37-6fb9-48e1-8d0a-af4bd65f16f1",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:26.856Z",
             "number_observed": 1,
             "protocols": [
@@ -103,12 +123,16 @@
             "dst_ip": "192.168.79.136",
             "src_ip": "66.130.62.35",
             "src_port": 80,
-            "dst_port": 39500
+            "dst_port": 39500,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--61c3c38f-8c42-4c39-b7ce-4aada566b154",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--df45320b-5458-40d8-b007-849f32e7a115",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:27.982Z",
             "number_observed": 1,
             "protocols": [
@@ -118,12 +142,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 54682,
-            "dst_port": 1389
+            "dst_port": 1389,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "1",
+            "tcp.flags.ack": "0"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--75a54581-fb81-4a74-9bb1-6f62a1417cc4",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--e0ca420b-5de8-4f5d-91c2-5fabf554fb45",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:27.982Z",
             "number_observed": 1,
             "protocols": [
@@ -133,12 +161,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 1389,
-            "dst_port": 54682
+            "dst_port": 54682,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "1",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--93190978-5f88-4879-be3f-1cfe6781de7f",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--7081b756-3c89-4395-a686-9d5d1ad357ee",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:27.982Z",
             "number_observed": 1,
             "protocols": [
@@ -148,12 +180,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 54682,
-            "dst_port": 1389
+            "dst_port": 1389,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--f24f9cda-eee0-4fbc-9191-88df7c48884d",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--acd35a99-f728-45b0-b5c4-d67621f1aa91",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:28.079Z",
             "number_observed": 1,
             "protocols": [
@@ -163,12 +199,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 54682,
-            "dst_port": 1389
+            "dst_port": 1389,
+            "tcp.len": "14",
+            "tcp.flags.push": "1",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--9a769762-a654-4134-aebd-7783dd3c8358",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--1830aefa-5b45-4ec8-973a-b70a1f192eb7",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:28.079Z",
             "number_observed": 1,
             "protocols": [
@@ -178,12 +218,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 1389,
-            "dst_port": 54682
+            "dst_port": 54682,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--73684148-7da0-4a0d-b554-cdbf60e725ea",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--422c410a-1f64-41cf-973a-c5b280047c3e",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:28.393Z",
             "number_observed": 1,
             "protocols": [
@@ -193,12 +237,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 1389,
-            "dst_port": 54682
+            "dst_port": 54682,
+            "tcp.len": "14",
+            "tcp.flags.push": "1",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--742c08c9-941a-424e-b358-eeb257c63aab",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--49993382-f388-45c9-8c0b-09e0a38d310f",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:28.393Z",
             "number_observed": 1,
             "protocols": [
@@ -208,12 +256,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 54682,
-            "dst_port": 1389
+            "dst_port": 1389,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--efc1e61d-d2f1-4614-a2a2-0ac54ad2649e",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--a047173b-6798-4179-bc77-dcb5fa019ee0",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:28.502Z",
             "number_observed": 1,
             "protocols": [
@@ -223,12 +275,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 54682,
-            "dst_port": 1389
+            "dst_port": 1389,
+            "tcp.len": "69",
+            "tcp.flags.push": "1",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--d017813c-f33d-41a0-bc6f-bfd8a82c561f",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--d6dd6434-61d8-45b2-ada6-5d9c501c12da",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:28.502Z",
             "number_observed": 1,
             "protocols": [
@@ -238,12 +294,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 1389,
-            "dst_port": 54682
+            "dst_port": 54682,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--3ea60ee8-7ec0-4e0f-9f03-f2a61224a0fd",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--a293572c-2376-4f0f-86e3-1713bdf5aadd",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:29.195Z",
             "number_observed": 1,
             "protocols": [
@@ -253,12 +313,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 1389,
-            "dst_port": 54682
+            "dst_port": 54682,
+            "tcp.len": "145",
+            "tcp.flags.push": "1",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--ffe50dba-8f82-46c8-8dbd-cce45b342437",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--5f88786b-3e3f-4447-8691-09c3c3014bf4",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:29.195Z",
             "number_observed": 1,
             "protocols": [
@@ -268,12 +332,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 54682,
-            "dst_port": 1389
+            "dst_port": 1389,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--27856a31-6ced-4e20-a297-6cccae4c06d5",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--f1339d53-3e77-4098-9482-e4f93e34b2ab",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:29.195Z",
             "number_observed": 1,
             "protocols": [
@@ -283,12 +351,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 1389,
-            "dst_port": 54682
+            "dst_port": 54682,
+            "tcp.len": "14",
+            "tcp.flags.push": "1",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--58c3c15b-6655-415b-9d71-5c4b1c8f2659",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--cb1659bd-cba0-4a3b-a432-46608451edb4",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:29.195Z",
             "number_observed": 1,
             "protocols": [
@@ -298,12 +370,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 54682,
-            "dst_port": 1389
+            "dst_port": 1389,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--19466baa-be4a-4514-a9c1-07b2fd9e19ed",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--04a9a49d-b8cd-4344-9177-ace82ae2ad14",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:29.262Z",
             "number_observed": 1,
             "protocols": [
@@ -313,12 +389,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 37998,
-            "dst_port": 8000
+            "dst_port": 8000,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "1",
+            "tcp.flags.ack": "0"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--cbf7fca9-6e9f-4f1a-ae24-20de4a64b9b3",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--5cd6aaf9-0312-4396-b889-4e1d96a2e3f3",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:29.262Z",
             "number_observed": 1,
             "protocols": [
@@ -328,12 +408,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 8000,
-            "dst_port": 37998
+            "dst_port": 37998,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "1",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--9992b750-54af-4a81-91d4-5142812bcfa2",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--a13a64a1-26dc-4701-b959-9a711dfc3fa2",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:29.262Z",
             "number_observed": 1,
             "protocols": [
@@ -343,12 +427,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 37998,
-            "dst_port": 8000
+            "dst_port": 8000,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--d063f030-92c7-4bb1-b63a-0630e4f1a0dd",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--8a14c213-371d-4442-86fb-8a49bdcaf90c",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:29.264Z",
             "number_observed": 1,
             "protocols": [
@@ -360,13 +448,17 @@
             "src_ip": "127.0.0.1",
             "src_port": 37998,
             "dst_port": 8000,
+            "tcp.len": "210",
+            "tcp.flags.push": "1",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1",
             "http.connection": "keep-alive",
             "http.request.full_uri": "http://localhost:8000/Exploit.class"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--7817ce0e-7508-45f2-927b-0bd4e5295dd1",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--ff384a60-41f2-4207-898c-7957e4f6ac71",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:29.264Z",
             "number_observed": 1,
             "protocols": [
@@ -376,12 +468,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 8000,
-            "dst_port": 37998
+            "dst_port": 37998,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--dec88dc6-1253-4295-92bc-87ae526e94e2",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--0c449410-ff25-48d3-a445-567d91f4b0a5",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:29.421Z",
             "number_observed": 1,
             "protocols": [
@@ -391,12 +487,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 8000,
-            "dst_port": 37998
+            "dst_port": 37998,
+            "tcp.len": "197",
+            "tcp.flags.push": "1",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--d8fd3e7a-af46-4200-a3ac-8d504be1003c",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--24863558-bdc5-488f-90d4-4ccbe2128bf8",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:29.421Z",
             "number_observed": 1,
             "protocols": [
@@ -406,12 +506,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 37998,
-            "dst_port": 8000
+            "dst_port": 8000,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--44abc5d7-c0ad-485e-9759-3ba270ad6c82",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--588ca4eb-f671-4c83-aef3-1401997a8d4e",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:29.421Z",
             "number_observed": 1,
             "protocols": [
@@ -423,12 +527,16 @@
             "src_ip": "127.0.0.1",
             "src_port": 8000,
             "dst_port": 37998,
+            "tcp.len": "1358",
+            "tcp.flags.push": "1",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1",
             "http.request.full_uri": "http://localhost:8000/Exploit.class"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--9d908b58-ba8b-4878-8ddb-f0eeb4c60c49",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--d4d12003-58f4-4ce7-aed8-22f944ae2bfe",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:29.421Z",
             "number_observed": 1,
             "protocols": [
@@ -438,12 +546,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 37998,
-            "dst_port": 8000
+            "dst_port": 8000,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--2bdbeb60-0d67-4755-b08f-9109eec2cd32",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--82795b4c-cd97-4318-9fd3-c02bbc1dbcc1",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:29.421Z",
             "number_observed": 1,
             "protocols": [
@@ -453,12 +565,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 8000,
-            "dst_port": 37998
+            "dst_port": 37998,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--c29d4f0e-8987-4562-9343-e20a349f89f4",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--d1ecd652-f21c-42e0-be34-c830b95fa9ba",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:29.425Z",
             "number_observed": 1,
             "protocols": [
@@ -468,12 +584,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 37998,
-            "dst_port": 8000
+            "dst_port": 8000,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--242e225b-ce1d-4465-8a5c-16bcdde5128a",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--886c5a67-7cf9-4c52-962c-707b77671657",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:29.425Z",
             "number_observed": 1,
             "protocols": [
@@ -483,12 +603,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 8000,
-            "dst_port": 37998
+            "dst_port": 37998,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--dec7e795-8142-4434-9cc3-6f6b2fb0c6a6",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--d46473e0-047b-4230-b2ca-009d779493ec",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:29.454Z",
             "number_observed": 1,
             "protocols": [
@@ -498,12 +622,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 41354,
-            "dst_port": 9001
+            "dst_port": 9001,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "1",
+            "tcp.flags.ack": "0"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--c04e087c-38e6-42fc-abe4-303aec35e099",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--a72ff0de-b27b-437f-b690-0246ef6b7540",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:29.454Z",
             "number_observed": 1,
             "protocols": [
@@ -513,12 +641,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 9001,
-            "dst_port": 41354
+            "dst_port": 41354,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "1",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--38354cba-e8ab-492e-9c82-e1d875ca52fd",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--1b8b3474-e04a-4dd2-8b82-19038f2d9804",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:29.454Z",
             "number_observed": 1,
             "protocols": [
@@ -528,12 +660,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 41354,
-            "dst_port": 9001
+            "dst_port": 9001,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--f6908ffc-616b-407b-afa5-542be8841c2f",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--15cb0ff5-16e1-4957-ba54-81d2bb6d5786",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:34.084Z",
             "number_observed": 1,
             "protocols": [
@@ -543,12 +679,16 @@
             "dst_ip": "34.107.221.82",
             "src_ip": "192.168.79.136",
             "src_port": 47212,
-            "dst_port": 80
+            "dst_port": 80,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--c6a5a2a7-e925-4de8-9645-8568d3f6e052",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--665b364a-b6e6-4d84-bfd2-41ffd65f9021",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:34.084Z",
             "number_observed": 1,
             "protocols": [
@@ -558,12 +698,16 @@
             "dst_ip": "192.168.79.136",
             "src_ip": "34.107.221.82",
             "src_port": 80,
-            "dst_port": 47212
+            "dst_port": 47212,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--8d6fd39d-955f-4d73-a2c8-5b7e780d3e06",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--d61a88c4-4885-43a7-9e9e-9c0c9b4be06c",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:34.596Z",
             "number_observed": 1,
             "protocols": [
@@ -573,12 +717,16 @@
             "dst_ip": "34.107.221.82",
             "src_ip": "192.168.79.136",
             "src_port": 47228,
-            "dst_port": 80
+            "dst_port": 80,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--14028383-6b05-470d-b5aa-81d57726d9f5",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--b636105f-5c6a-4259-8ae8-5b05f94467b7",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:34.596Z",
             "number_observed": 1,
             "protocols": [
@@ -588,12 +736,16 @@
             "dst_ip": "192.168.79.136",
             "src_ip": "34.107.221.82",
             "src_port": 80,
-            "dst_port": 47228
+            "dst_port": 47228,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--5abd6da4-5da4-4e52-aaf0-5c36451098c3",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--87dc6331-bb2a-49aa-bf9d-f51f59ffda7c",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:35.522Z",
             "number_observed": 1,
             "protocols": [
@@ -603,12 +755,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 9001,
-            "dst_port": 41354
+            "dst_port": 41354,
+            "tcp.len": "3",
+            "tcp.flags.push": "1",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--9e3bb397-d28d-4508-9d8c-aed3360e7cc6",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--03a5f844-5a9e-4e9d-94d3-78c8770734c3",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:35.522Z",
             "number_observed": 1,
             "protocols": [
@@ -618,12 +774,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 41354,
-            "dst_port": 9001
+            "dst_port": 9001,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--460d5b2e-6ef4-4289-a92f-e13a2571feea",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--65755fc1-3f3d-44f4-9e64-68f0f3679196",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:35.574Z",
             "number_observed": 1,
             "protocols": [
@@ -633,12 +793,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 41354,
-            "dst_port": 9001
+            "dst_port": 9001,
+            "tcp.len": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--09614feb-5d5b-438e-b2ea-c1cbfce724f7",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--0bff096c-7c7a-443b-8f15-4c1bc9e33719",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:35.574Z",
             "number_observed": 1,
             "protocols": [
@@ -648,12 +812,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 9001,
-            "dst_port": 41354
+            "dst_port": 41354,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--a4d9884d-0beb-4c9c-beca-128b072c869c",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--9ae284de-80bf-4ddf-9500-628cfaa08ebc",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:35.574Z",
             "number_observed": 1,
             "protocols": [
@@ -663,12 +831,16 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 41354,
-            "dst_port": 9001
+            "dst_port": 9001,
+            "tcp.len": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         },
         {
             "type": "network-traffic",
-            "id": "network-traffic--814afb09-318f-47b7-b75b-e3def354a9da",
-            "created_by_ref": "identity--791dbebc-ee5e-4369-a73f-f56ba5b249c1",
+            "id": "network-traffic--13c44894-f568-4aeb-84ca-fd2473cf493c",
+            "created_by_ref": "identity--b6975895-782b-48fc-a9f4-25015b95e69b",
             "timestamp": "2025-03-30T17:58:35.574Z",
             "number_observed": 1,
             "protocols": [
@@ -678,7 +850,11 @@
             "dst_ip": "127.0.0.1",
             "src_ip": "127.0.0.1",
             "src_port": 9001,
-            "dst_port": 41354
+            "dst_port": 41354,
+            "tcp.len": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.ack": "1"
         }
     ]
 }

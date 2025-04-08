@@ -102,3 +102,20 @@ Récupérer les données traités par logstash, puis elastic search puis transfo
 ```
 stix-shifter --debug transmit elastic_ecs "\$(cat stix/connect.json)" "\$(cat stix/config.json)" results '((event.loglevel : "FINE") OR (event.loglevel : "WARNING") OR (event.loglevel : "INFO")) AND (@timestamp:\["2025-03-30T00:00:00.000Z" TO "2025-03-31T00:05:00.000Z"])' 0 10 > results.json
 ```
+
+### Récupération des process et network-traffic
+
+Pour récupérer les process (output.json):
+```
+cd elastic_python
+python3 script.py
+cd ..
+```
+
+Pour récupérer les network-traffic (stix_output.json) :
+```
+cd stix_wireshark
+python3 transfer.py
+```
+Mettre les identifiants elasticsearch
+

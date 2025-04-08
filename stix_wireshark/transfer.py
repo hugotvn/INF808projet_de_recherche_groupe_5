@@ -33,6 +33,11 @@ def convert_wireshark_to_stix(input_file, output_file):
             protocols.append("ip")
         if "tcp" in layers:
             protocols.append("tcp")
+            toAdd["tcp.len"] = layers["tcp"]["tcp.len"]
+            if "tcp.flags_tree" in layers["tcp"] :
+                toAdd["tcp.flags.push"] = layers["tcp"]["tcp.flags_tree"]["tcp.flags.push"]
+                toAdd["tcp.flags.syn"] = layers["tcp"]["tcp.flags_tree"]["tcp.flags.syn"]
+                toAdd["tcp.flags.ack"] = layers["tcp"]["tcp.flags_tree"]["tcp.flags.ack"]
         if "udp" in layers:
             protocols.append("udp")
         if "icmp" in layers:
