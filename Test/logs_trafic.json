@@ -1,0 +1,676 @@
+{
+    "type": "bundle",
+    "id": "bundle--2c3b08b6-8792-4308-a4db-34dfcbdbfffe",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "identity",
+            "id": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "created": "2025-04-07T22:07:08.217320Z",
+            "modified": "2025-04-07T22:07:08.217320Z",
+            "name": "Wireshark STIX converter",
+            "identity_class": "program"
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--b2764d54-90c8-4233-90d3-3c45165b4572",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:26.410Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp",
+                "ldap"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 48874,
+            "dst_port": 8080
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--446a496d-695d-4f12-874f-03cfcabda2b5",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:26.410Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 8080,
+            "dst_port": 48874
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--04e91130-2cb7-4d4b-ad4e-2dd4b2718ad8",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:26.441Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "66.130.62.8",
+            "src_ip": "192.168.79.136",
+            "src_port": 37738,
+            "dst_port": 80
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--a68dfbfd-614e-46b3-b95f-8daaeae8f882",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:26.441Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "192.168.79.136",
+            "src_ip": "66.130.62.8",
+            "src_port": 80,
+            "dst_port": 37738
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--12f99b0f-cd50-4170-bdf6-66f0af82b017",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:26.855Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "66.130.62.35",
+            "src_ip": "192.168.79.136",
+            "src_port": 39500,
+            "dst_port": 80
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--0c179108-80fa-463a-a014-169e275bd525",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:26.856Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "192.168.79.136",
+            "src_ip": "66.130.62.35",
+            "src_port": 80,
+            "dst_port": 39500
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--e0c2afc0-8192-4741-9dad-be2a3bdfebca",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:27.982Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 54682,
+            "dst_port": 1389
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--44d09aee-21c2-4204-aa43-4b5d46e61706",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:27.982Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 1389,
+            "dst_port": 54682
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--5b934c12-63d9-4314-8c13-2002cf62414e",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:27.982Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 54682,
+            "dst_port": 1389
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--0c7855ad-04f5-457d-9592-0635e5a5ec57",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:28.079Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 54682,
+            "dst_port": 1389
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--e9e6966f-ddca-4407-a75b-e008f5e17ef1",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:28.079Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 1389,
+            "dst_port": 54682
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--c84a3284-3143-4a4d-90a3-dcac5944be7a",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:28.393Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 1389,
+            "dst_port": 54682
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--ebfbcc77-63a6-480a-984f-e9ea85ca92f5",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:28.393Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 54682,
+            "dst_port": 1389
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--06e314a1-6224-471d-9973-12673fb267f3",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:28.502Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 54682,
+            "dst_port": 1389
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--584e5481-6daa-4be6-92d7-d2b7c1424345",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:28.502Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 1389,
+            "dst_port": 54682
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--4cfbc6cf-4748-4cb1-8457-c801ea06cee5",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:29.195Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 1389,
+            "dst_port": 54682
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--42105b7a-e512-4929-a81f-4a908244341d",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:29.195Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 54682,
+            "dst_port": 1389
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--d0077819-4d5f-4d3f-8db9-f67f93892423",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:29.195Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 1389,
+            "dst_port": 54682
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--112918e7-a1a8-437f-89f4-2ddde6edee22",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:29.195Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 54682,
+            "dst_port": 1389
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--8cad8978-3659-4958-bbf2-8c98b0357eed",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:29.262Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 37998,
+            "dst_port": 8000
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--b170e425-0d17-4660-8cb4-8387982d053c",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:29.262Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 8000,
+            "dst_port": 37998
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--b82fed43-6e21-419d-8518-26c78212cd3f",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:29.262Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 37998,
+            "dst_port": 8000
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--f86e3c69-2f55-4cea-9071-dcfe8f478b26",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:29.264Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 37998,
+            "dst_port": 8000
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--2aafd818-2c2f-49be-9bce-c993715de7de",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:29.264Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 8000,
+            "dst_port": 37998
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--d6e9f0dd-3b35-47c6-b2c2-0c2e106f096a",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:29.421Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 8000,
+            "dst_port": 37998
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--946bbb3d-4e49-4f0e-8b37-d9179748b518",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:29.421Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 37998,
+            "dst_port": 8000
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--a7caf995-183a-4302-a08a-e685257dd41c",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:29.421Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 8000,
+            "dst_port": 37998
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--6bddade9-214d-4e69-a185-96ce0ff8d301",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:29.421Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 37998,
+            "dst_port": 8000
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--0e8113ac-c8fe-4bae-b377-68ea417afafa",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:29.421Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 8000,
+            "dst_port": 37998
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--7ddfd8be-90a3-44f7-8861-9cc04e8f2257",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:29.425Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 37998,
+            "dst_port": 8000
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--b867173e-efe2-4b98-a361-a272c1906217",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:29.425Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 8000,
+            "dst_port": 37998
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--574239ec-1443-4f1a-8427-97af10d36e03",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:29.454Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 41354,
+            "dst_port": 9001
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--7048c688-c69d-42bf-bf65-c0e1d560ba75",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:29.454Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 9001,
+            "dst_port": 41354
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--b69961be-35ca-473e-8b8f-84a89b63b5bb",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:29.454Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 41354,
+            "dst_port": 9001
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--d89f7740-9463-470b-b560-1cb09926676f",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:34.084Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "34.107.221.82",
+            "src_ip": "192.168.79.136",
+            "src_port": 47212,
+            "dst_port": 80
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--292d9447-ed3e-48da-b83e-095124d0f695",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:34.084Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "192.168.79.136",
+            "src_ip": "34.107.221.82",
+            "src_port": 80,
+            "dst_port": 47212
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--aa30b1a2-6417-4e6b-b3d8-54158c1806a4",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:34.596Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "34.107.221.82",
+            "src_ip": "192.168.79.136",
+            "src_port": 47228,
+            "dst_port": 80
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--9ecbb6ae-9b13-4b9b-a4be-34f8cdd6a582",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:34.596Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "192.168.79.136",
+            "src_ip": "34.107.221.82",
+            "src_port": 80,
+            "dst_port": 47228
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--d62864a1-c600-4feb-99b3-5c744ee673c8",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:35.522Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 9001,
+            "dst_port": 41354
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--2826c629-8b9b-466d-b5f2-b7a7842cd0f3",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:35.522Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 41354,
+            "dst_port": 9001
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--bf887c7b-1f7d-45f2-9ab5-1ccce7436fdb",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:35.574Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 41354,
+            "dst_port": 9001
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--38dc911e-8975-4f0b-81de-b621d0018c18",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:35.574Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 9001,
+            "dst_port": 41354
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--ae542fdf-9da9-4fdc-af34-5eb9f6d74fdd",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:35.574Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 41354,
+            "dst_port": 9001
+        },
+        {
+            "type": "network-traffic",
+            "id": "network-traffic--0ab2c054-e189-4ca8-93fb-0f5e82fd9769",
+            "created_by_ref": "identity--e1b45d2c-abd9-41b9-9cdc-1eb695f81bc4",
+            "timestamp": "2025-03-30T17:58:35.574Z",
+            "number_observed": 1,
+            "protocols": [
+                "ip",
+                "tcp"
+            ],
+            "dst_ip": "127.0.0.1",
+            "src_ip": "127.0.0.1",
+            "src_port": 9001,
+            "dst_port": 41354
+        }
+    ]
+}
